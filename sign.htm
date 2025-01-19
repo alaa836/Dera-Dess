@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <sryle>
+        *{ margin: 0; padding: 0; box-sizing: border-box; font-family: "poppins",sans-serif; } .img{ background-image: url(../../Pictures/download\ \(10\).jpeg); background-size: cover; background-repeat: no-repeat; background-position: center; height: 100vh;
+        }
+    </sryle>
+</head>
+
+<body>
+    <div class="img">
+        <div class="container">
+            <div class="form-box">
+                <form action="intex.htm" name="formfill" onsubmit="return validation()">
+                    <h2>Register</h2>
+                    <p id="result"></p>
+                    <div class="input-box">
+                        <i class='bx bxs-user'></i>
+                        <input type="text" placeholder="Username" name="Username">
+                    </div>
+                    <div class="input-box">
+                        <i class='bx bxs-envelope'></i>
+                        <!--عشان احط ايقونه الايميل-->
+                        <input type="Email" placeholder="Email" name="Email">
+                    </div>
+                    <div class="input-box">
+                        <i class='bx bxs-lock-alt'></i>
+                        <!--عشان احط ايقونه القفل-->
+                        <input type="Password" placeholder="Password" name="Password">
+                    </div>
+                    <div class="input-box">
+                        <i class='bx bxs-lock-alt'></i>
+                        <input type="Password" placeholder="Confirn Password" name="CPassword">
+                    </div>
+                    <a href="intex.htm">
+                        <div class="button"><input type="submit" class="btn" onclick="validation()" value="Register"></div>
+                    </a>
+                    <div class="group">
+                        <span><a href="forget-password.htm">Forget-password</a></span>
+                        <span><a href="intex.htm">Login</a></span>
+                    </div>
+                </form>
+            </div>
+            <div class="popup" id="popup">
+                <ion-icon name="checkmark-circle-outline"></ion-icon>
+                <h2>Thank you!</h2>
+                <p>Your were registration Sucessfully. Thanks</p>
+                <a href="log.htm"><button onclick="CloseSlide()">OK</button></a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
